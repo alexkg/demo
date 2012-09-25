@@ -1,0 +1,91 @@
+  .void
+{
+  position:fixed; top:0; left:-9999; visibility:hidden;
+}
+  .wrapper
+{
+  position:relative;
+}
+  .wrapper.centered
+{
+  margin-left:auto; margin-right:auto;
+}
+  .wrapper.fixed
+{
+  position:fixed; top:0; left:0; right:0; bottom:0;
+}
+  .wrapper.overlay
+{
+  display:block; opacity:0; visibility:hidden;
+  -webkit-transition: opacity 500ms, visibility 500ms;
+     -moz-transition: opacity 500ms, visibility 500ms;
+       -o-transition: opacity 500ms, visibility 500ms;
+          transition: opacity 500ms, visibility 500ms;
+}
+  .wrapper.smokey
+{
+  color:#fcfcfc; background-color:#222; background-color:rgba(0, 0, 0, 0.75);
+}
+  .wrapper.absolute
+{
+  position:absolute;
+}
+  .wrapper.relative
+{
+  position:relative;
+}
+  .wrapper.clipped
+{
+  overflow:hidden;
+}
+  .wrapper.inline
+{
+  display:inline-block; zoom:1; * display:inline;
+}
+  .wrapper.inlined
+{
+  font-size:0;
+}
+  .wrapper.inlined > *
+{
+  display:inline-block; zoom:1; * display:inline;
+}
+  .wrapper.inlined.top-aligned > *
+{
+  vertical-align:top;
+}
+  .wrapper.inlined.mid-aligned > *
+, .wrapper.inlined.middle-aligned > *
+{
+  vertical-align:middle;
+}
+  .wrapper.inlined.bot-aligned > *
+, .wrapper.inlined.bottom-aligned > *
+{
+  vertical-align:bottom;
+}
+  .wrapper.inlined.base-aligned > *
+, .wrapper.inlined.baseline-aligned > *
+{
+  vertical-align:baseline;
+}
+  .corner
+{
+  position:absolute;
+}
+  .corner.top
+{
+  top:0;
+}
+  .corner.left
+{
+  left:0;
+}
+  .corner.right
+{
+  right:0;
+}
+  .corner.bottom
+{
+  bottom:0;
+}

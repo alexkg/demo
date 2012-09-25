@@ -1,0 +1,40 @@
+.\.inline-block { display:inline-block; zoom:1; * display:inline; }
+.\.line-height-0em8 { line-height:0.8em; }
+.\.line-height-0em9 { line-height:0.9em; }
+.\.line-height-1em { line-height:1em; }
+.\.line-height-20px { line-height:20px; }
+.\.line-height-30px { line-height:30px; }
+.\.line-height-40px { line-height:40px; }
+.\.line-height-50px { line-height:50px; }
+.\.line-height-200px { line-height:200px; }
+.\.line-height-300px { line-height:300px; }
+.\.line-height-400px { line-height:400px; }
+.\.line-height-500px { line-height:500px; }
+.\.text-90pc { font-size:90%; }
+.\.text-1000pc { font-size:1000%; }
+.\.text-2000pc { font-size:1200%; }
+.\.text-uppercase { text-transform:uppercase; }
+.\.text-uppercase-small { font-variant: small-caps; }
+.\.text-capitalize { text-transform:capitalize; }
+.\.text-left { text-align:left; }
+.\.text-right { text-align:right; }
+.\.text-center { text-align:center; }
+.\.float-left { float:left; }
+.\.float-right { float:right; }
+.\.sink-top,
+.\.sink-left,
+.\.sink-right,
+.\.sink-bottom { position:absolute; }
+.\.sink-top { top:0; }
+.\.sink-left { left:0; }
+.\.sink-right { right:0; }
+.\.sink-bottom { bottom:0; }
+.\.padding-5px { padding:5px; }
+.\.padding-bottom-30px { padding:30px; }
+.\.margin-top-20px { margin-top:20px; }
+.\.margin-top-30px { margin-top:30px; }
+.\.margin-top-40px { margin-top:50px; }
+.\.margin-top-50px { margin-top:50px; }
+.\.margin-top-100px { margin-top:100px; }
+.\.z-index-1 { z-index:1; } 
+.\.height-100pc { height:100%; }

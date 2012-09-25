@@ -1,0 +1,149 @@
+/* general transitions... */
+
+#gallery\[0\]:checked ~ * .slides.wrapper.for-gallery,
+#gallery\[0\]:checked ~ * .backdrop.wrapper.for-gallery
+{
+  -webkit-transition-delay: 500ms;
+     -moz-transition-delay: 500ms;
+       -o-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+.slides.wrapper.for-gallery
+{
+  -webkit-transition: margin-left 500ms;
+     -moz-transition: margin-left 500ms;
+       -o-transition: margin-left 500ms;
+          transition: margin-left 500ms;
+}
+#gallery\[0\] ~ [name=gallery]:checked ~ * .slides.wrapper.for-gallery:hover ~ .close.button.for-gallery,
+#gallery\[0\] ~ [name=gallery]:checked ~ * .close.button.for-gallery:hover,
+.close.button.for-gallery
+{
+  opacity:0.9;
+  -webkit-transition: opacity 1250ms;
+     -moz-transition: opacity 1250ms;
+       -o-transition: opacity 1250ms;
+          transition: opacity 1250ms;
+  -webkit-transition-delay: 250ms;
+     -moz-transition-delay: 250ms;
+       -o-transition-delay: 250ms;
+          transition-delay: 250ms;
+}
+#gallery\[0\] ~ [name=gallery]:checked ~ * .close.button.for-gallery
+{
+  opacity:0;
+  -webkit-transition-delay: 1250ms;
+     -moz-transition-delay: 1250ms;
+       -o-transition-delay: 1250ms;
+          transition-delay: 1250ms;
+}
+#gallery\[0\] ~ [name=gallery]:checked ~ * .overlay.wrapper.for-gallery
+{
+  opacity:1; visibility:visible;
+}
+.backdrop.wrapper.for-gallery
+{
+  -webkit-box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-position 500ms;
+     -moz-transition: background-position 500ms;
+       -o-transition: background-position 500ms;
+          transition: background-position 500ms;
+}
+
+/* state-based transitions... */
+
+#gallery\[1\]:checked ~ * .slides.wrapper.for-gallery { margin-left: 000%; }
+#gallery\[2\]:checked ~ * .slides.wrapper.for-gallery { margin-left:-100%; }
+#gallery\[3\]:checked ~ * .slides.wrapper.for-gallery { margin-left:-200%; }
+#gallery\[4\]:checked ~ * .slides.wrapper.for-gallery { margin-left:-300%; }
+
+#gallery\[1\]:checked ~ * .bullets.wrapper.for-gallery > :nth-child(1),
+#gallery\[2\]:checked ~ * .bullets.wrapper.for-gallery > :nth-child(2),
+#gallery\[3\]:checked ~ * .bullets.wrapper.for-gallery > :nth-child(3),
+#gallery\[4\]:checked ~ * .bullets.wrapper.for-gallery > :nth-child(4)
+{
+  color:#222;
+  text-shadow: -1px  0px #fff,
+                0px  1px #fff,
+                1px  0px #fff,
+                0px -1px #fff;
+}
+
+#gallery\[1\]:checked ~ * .backdrop.wrapper.for-gallery { background-position:+000% 0; }
+#gallery\[2\]:checked ~ * .backdrop.wrapper.for-gallery { background-position:+033% 0; }
+#gallery\[3\]:checked ~ * .backdrop.wrapper.for-gallery { background-position:+067% 0; }
+#gallery\[4\]:checked ~ * .backdrop.wrapper.for-gallery { background-position:+100% 0; }
+
+/* general styling... */
+
+.thumbs.wrapper.for-gallery
+{
+  background-image:url(rapture/1/thumb.jpeg); background-repeat:no-repeat;
+}
+.backdrop.wrapper.for-gallery
+{
+  height:520px; line-height:520px;
+  background-image:url(rapture/1/full.jpeg); background-repeat:no-repeat;
+  text-align:center;
+}
+.slides.wrapper.for-gallery
+{
+  width:400%; height:100%;
+  text-align:left;
+}
+.slides.wrapper.for-gallery > *
+{
+  float:left;
+  width:25%; height:100%;
+  text-align:center;
+}
+.bullets.wrapper.for-gallery
+{
+  padding:25px 50px;
+}
+.bullets.wrapper.for-gallery > *
+{
+  font-size:200%;
+}
+.bullets.wrapper.for-gallery > * + *
+{
+  margin-left:5px;
+}
+
+.close.button.for-gallery
+{
+  text-transform:uppercase; font-variant:small-caps; text-align:right; color:#fdad2d;
+  padding:0 30px;
+  font-size:10px;
+  width:200px; height:30px; line-height:30px;
+  background: rgba(0, 0, 0, 0.5);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1.0));
+  background: -webkit-gradient(linear, 0 0, 100% 0 , from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1.0)));
+}
+.close.button.for-gallery abbr
+{
+  font-size:1.6em;
+}
+
+.slides.wrapper figure:before,
+.slides.wrapper figure:after
+{
+  content:'\00a0'; /* force vertical-alignment for single image */
+}
+.slides.wrapper figure
+{
+  position:relative;
+}
+.slides.wrapper figcaption
+{
+  position:absolute; left:0; right:0; bottom:15px;
+  line-height:20px;
+  padding:3px 15px;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+.slides.wrapper img
+{
+  vertical-align:middle;
+}
