@@ -1,0 +1,1 @@
+[Pure-CSS3 slideshow!](http://alexkg.github.com/demo)
